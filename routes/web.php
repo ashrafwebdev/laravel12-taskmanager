@@ -37,3 +37,13 @@ Route::get('/dashboard', function(){
 
 Route::get('/home', [PageController::class, 'home'])->name('home');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+
+// Route groups
+Route::prefix('admin')->group(function(){
+    Route::get('/dashboard',function(){
+        return "Admin dashboard";
+    });
+    Route::get('/users',function(){
+        return "Admin Users";
+    });
+});
