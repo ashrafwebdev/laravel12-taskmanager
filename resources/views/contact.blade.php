@@ -1,0 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
+<h2>Contact Us</h2>
+<p>Email: contact@myapp.com</p>
+@endsection
